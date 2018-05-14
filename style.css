@@ -250,4 +250,5 @@ ul li{
 }
 .creditos{
   grid-area:creditos;
+  padding-bottom:20px;
 }
