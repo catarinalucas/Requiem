@@ -16,22 +16,29 @@
 h1{
   font-family: 'Zwizz-Bold';
   font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 h3{
   font-family: 'Zwizz-Regular';
   font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 p{
   font-family: 'Zwizz-Regular';
   font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 ul li{
   list-style: none;
   font-family: 'Zwizz-Regular';
   font-size: 15px;
+  line-height: 20px;
 }
 
 .grid{
@@ -49,20 +56,28 @@ ul li{
   '. album_familia album_familia-photo .'
   '. instantaneos instantaneos-photo .'
   '. espaco espaco-photo .'
-  '. referencias referencias .'
+  '. referencias_one referencias_one-photo .'
+  '. referencias_two referencias_two-photo .'
+  '. referencias_three referencias_three-photo .'
   '. acao acao .'
   '. angulos angulos .'
   '. custo custo .'
   '. montagem montagem .'
   '. creditos creditos .';
 
-  grid-gap:30px;
+  grid-gap:40px;
   /*grid-gap:10px
   cria um espaco de 10px entre todas as rows e columns*/
 }
 
 .home{
   grid-area:home;
+  justify-self:center;
+}
+
+.home img{
+  max-width: 900px;
+  max-height: 900px;
 }
 
 .intro{
@@ -83,6 +98,12 @@ ul li{
 
 .impressoes_genitais-photo{
   grid-area:impressoes_genitais-photo;
+  justify-self:center;
+}
+
+.impressoes_genitais-photo img{
+  max-width: 464px;
+  max-height: 252px;
 }
 
 .retratos{
@@ -99,6 +120,11 @@ ul li{
 
 .story_abordo-photo{
   grid-area:story_abordo-photo;
+  justify-self:center;
+}
+.story_abordo-photo img{
+  max-width: 464px;
+  max-height: 252px;
 }
 
 .fotos_homem{
@@ -107,6 +133,14 @@ ul li{
 
 .fotos_homem-photo{
   grid-area:fotos_homem-photo;
+  justify-self:center;
+}
+
+.fotos_homem-photo img{
+  max-width: 464px;
+  max-height: 252px;
+  padding-left: 10px;
+
 }
 
 .album_familia{
@@ -115,6 +149,12 @@ ul li{
 
 .album_familia-photo{
   grid-area:album_familia-photo;
+  justify-self:center;
+}
+
+.album_familia-photo img{
+  max-width: 464px;
+  max-height: 252px;
 }
 
 .instantaneos{
@@ -123,6 +163,7 @@ ul li{
 
 .instantaneos-photo{
   grid-area:instantaneos-photo;
+
 }
 
 .espaco{
@@ -131,18 +172,68 @@ ul li{
 
 .espaco-photo{
   grid-area: espaco-photo;
+
+}
+.espaco-photo img{
+  max-width: 464px;
+  max-height: 252px;
 }
 
-.referencias{
-  grid-area: referencias;
+.referencias_one{
+  grid-area: referencias_one;
 }
 
+.referencias_one-photo{
+  grid-area: referencias_one-photo;
+  justify-self:center;
+}
+.referencias_one-photo img{
+  max-width: 464px;
+  max-height: 252px;
+}
+
+.referencias_two{
+  grid-area: referencias_two;
+}
+
+.referencias_two-photo{
+  grid-area: referencias_two-photo;
+  justify-self:center;
+}
+
+.referencias_two-photo img{
+  max-width: 464px;
+  max-height: 252px;
+}
+.referencias_three{
+  grid-area: referencias_three;
+}
+
+.referencias_three-photo{
+  grid-area: referencias_three-photo;
+  justify-self:center;
+}
+
+.referencias_three-photo img{
+  max-width: 464px;
+  max-height: 252px;
+}
 .acao{
   grid-area: acao;
+  align-self: center;
 }
 
+.acao img{
+  max-width: 600px;
+  max-height: 400px;
+}
 .angulos{
   grid-area: angulos;
+}
+
+.angulos img{
+  max-width: 464px;
+  max-height: 252px;
 }
 
 .custo{
@@ -153,6 +244,10 @@ ul li{
   grid-area: montagem;
 }
 
+.montagem img{
+  max-width: 464px;
+  max-height: 252px;
+}
 .creditos{
   grid-area:creditos;
 }
