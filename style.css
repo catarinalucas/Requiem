@@ -1,0 +1,158 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family:'Zwizz-Bold';
+  src:url(assets/Zwizz-Bold.otf);
+}
+
+@font-face {
+  font-family:'Zwizz-Regular';
+  src:url(assets/Zwizz-Regular.otf);
+}
+
+h1{
+  font-family: 'Zwizz-Bold';
+  font-size: 20px;
+}
+
+h3{
+  font-family: 'Zwizz-Regular';
+  font-size: 15px;
+}
+
+p{
+  font-family: 'Zwizz-Regular';
+  font-size: 15px;
+}
+
+ul li{
+  list-style: none;
+  font-family: 'Zwizz-Regular';
+  font-size: 15px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 40vw 40vw 1fr;
+  /*se quiser um espaco em branco ponho .*/
+  grid-template-areas:
+  '. home home .'
+  '. intro intro .'
+  '. crimes_celeres crimes_celeres-photo .'
+  '. impressoes_genitais impressoes_genitais-photo .'
+  '. retratos retratos-photo .'
+  '. story_abordo story_abordo-photo .'
+  '. fotos_homem fotos_homem-photo .'
+  '. album_familia album_familia-photo .'
+  '. instantaneos instantaneos-photo .'
+  '. espaco espaco-photo .'
+  '. referencias referencias .'
+  '. acao acao .'
+  '. angulos angulos .'
+  '. custo custo .'
+  '. montagem montagem .'
+  '. creditos creditos .';
+
+  grid-gap:30px;
+  /*grid-gap:10px
+  cria um espaco de 10px entre todas as rows e columns*/
+}
+
+.home{
+  grid-area:home;
+}
+
+.intro{
+  grid-area:intro;
+}
+
+.crimes_celeres{
+  grid-area:crimes_celeres;
+}
+
+.crimes_celeres-photo{
+  grid-area:crimes_celeres-photo;
+}
+
+.impressoes_genitais{
+  grid-area:impressoes_genitais;
+}
+
+.impressoes_genitais-photo{
+  grid-area:impressoes_genitais-photo;
+}
+
+.retratos{
+  grid-area:retratos;
+}
+
+.retratos-photo{
+  grid-area:retratos-photo;
+}
+
+.story_abordo{
+  grid-area:story_abordo;
+}
+
+.story_abordo-photo{
+  grid-area:story_abordo-photo;
+}
+
+.fotos_homem{
+  grid-area:fotos_homem;
+}
+
+.fotos_homem-photo{
+  grid-area:fotos_homem-photo;
+}
+
+.album_familia{
+  grid-area:album_familia;
+}
+
+.album_familia-photo{
+  grid-area:album_familia-photo;
+}
+
+.instantaneos{
+  grid-area:instantaneos;
+}
+
+.instantaneos-photo{
+  grid-area:instantaneos-photo;
+}
+
+.espaco{
+  grid-area: espaco;
+}
+
+.espaco-photo{
+  grid-area: espaco-photo;
+}
+
+.referencias{
+  grid-area: referencias;
+}
+
+.acao{
+  grid-area: acao;
+}
+
+.angulos{
+  grid-area: angulos;
+}
+
+.custo{
+  grid-area: custo;
+}
+
+.montagem{
+  grid-area: montagem;
+}
+
+.creditos{
+  grid-area:creditos;
+}
