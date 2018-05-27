@@ -80,6 +80,7 @@ ul li{
   '. espaco espaco-photo .'
   '. acao acao .'
   '. angulos angulos .'
+  '. referencias_geral referencias_geral .'
   '. referencias_one referencias_one-photo .'
   '. referencias_two referencias_two-photo .'
   '. referencias_three referencias_three-photo .'
@@ -385,6 +386,22 @@ ul li{
   max-height: 252px;
 }
 
+.referencias_geral{
+  grid-area: referencias_geral;
+}
+
+.referencias_geral img{
+  max-width: 464px;
+  max-height: 252px;
+  transition: 0.2s ease;
+  box-shadow: 6px 5px 3px rgba(255,255,255,0.2);
+  margin-left: 10px;
+}
+
+.referencias_geral img:hover{
+
+  transform:translate(-2px,-5px);
+}
 .referencias_one{
   grid-area: referencias_one;
 }
@@ -432,15 +449,20 @@ ul li{
 .acao img{
   max-width: 700px;
   max-height: 400px;
-  padding-left: 30px;
+  padding-left: 50px;
 }
 .angulos{
   grid-area: angulos;
+
 }
 
 .angulos img{
-  max-width: 464px;
-  max-height: 252px;
+  max-width: 500px;
+  max-height: 300px;
+  padding-left: 30px;
+  padding-top: 60px;
+  padding-bottom: 150px;
+
 }
 
 .custo{
