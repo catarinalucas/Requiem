@@ -78,11 +78,11 @@ ul li{
   '. album_familia album_familia-photo .'
   '. instantaneos instantaneos-photo .'
   '. espaco espaco-photo .'
+  '. acao acao .'
+  '. angulos angulos .'
   '. referencias_one referencias_one-photo .'
   '. referencias_two referencias_two-photo .'
   '. referencias_three referencias_three-photo .'
-  '. acao acao .'
-  '. angulos angulos .'
   '. custo custo .'
   '. montagem montagem .'
   '. creditos creditos .';
@@ -289,10 +289,11 @@ ul li{
 }
 
 .interacoes__text--wrapper{
-  padding-left: 30px;
+  padding-left: 45px;
 }
 .crimes_celeres-photo{
   grid-area:crimes_celeres-photo;
+  margin-top: 200px;
 }
 
 .impressoes_genitais{
@@ -337,6 +338,7 @@ ul li{
 .fotos_homem-photo{
   grid-area:fotos_homem-photo;
   justify-self:center;
+  margin-top: 220px;
 }
 
 .fotos_homem-photo img{
@@ -362,6 +364,7 @@ ul li{
 
 .instantaneos{
   grid-area:instantaneos;
+  padding-bottom: 200px;
 }
 
 .instantaneos-photo{
@@ -427,8 +430,9 @@ ul li{
 }
 
 .acao img{
-  max-width: 600px;
+  max-width: 700px;
   max-height: 400px;
+  padding-left: 30px;
 }
 .angulos{
   grid-area: angulos;
