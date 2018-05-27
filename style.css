@@ -13,6 +13,21 @@
   src:url(assets/Zwizz-Regular.otf);
 }
 
+@font-face {
+  font-family: 'ChronosSerif-Stroked';
+  src:url(assets/ChronosSerif-Stroked.otf);
+}
+
+@font-face {
+  font-family: 'ChronosSerif-Filled';
+  src:url(assets/ChronosSerif-Filled.otf);
+}
+
+body{
+  background-color: #000;
+  color:#fff;
+}
+
 h1{
   font-family: 'Zwizz-Bold';
   font-size: 20px;
@@ -32,6 +47,7 @@ p{
   font-size: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
+  line-height: 1.56;
 }
 
 ul li{
@@ -41,15 +57,21 @@ ul li{
   line-height: 20px;
 }
 
+.secondary_font{
+  font-family: 'ChronosSerif-Filled';
+
+}
 .grid{
   display: grid;
   grid-template-columns: 1fr 40vw 40vw 1fr;
+  grid-template-rows: auto;
   /*se quiser um espaco em branco ponho .*/
   grid-template-areas:
-  '. home home .'
-  '. intro intro .'
+  '. scene scene .'
+  'intro intro intro intro'
+  ' numeros numeros numeros numeros'
   '. crimes_celeres crimes_celeres-photo .'
-  '. impressoes_genitais impressoes_genitais-photo .'
+  '. impressoes_genitais . .'
   '. retratos retratos-photo .'
   '. story_abordo story_abordo-photo .'
   '. fotos_homem fotos_homem-photo .'
@@ -69,25 +91,206 @@ ul li{
   /*grid-gap:10px
   cria um espaco de 10px entre todas as rows e columns*/
 }
-
-.home{
-  grid-area:home;
+/*---------------
+---DIAGRAMA------
+---------------*/
+#scene{
+  grid-area:scene;
   justify-self:center;
+
 }
 
-.home img{
-  max-width: 900px;
-  max-height: 900px;
+/*----first layer----*/
+.scene_corpo{
+  background-image: url(assets/imagens/scene/nivel1_scene_corpo.svg);
+  background-repeat: no-repeat;
+  height:437px;
+  width: 437px;
+  background-position: center;
+  margin-left: 24%;
+  margin-top: 24%;
+}
+/*----second layer----*/
+.scene_bala{
+  background-image: url(assets/imagens/scene/nivel2_scene_bala.svg);
+  background-repeat: no-repeat;
+  height:280px;
+  width: 280px;
+  margin-left: 40%;
+  margin-top: 20%;
 }
 
+.scene_dna{
+  background-image: url(assets/imagens/scene/nivel2_scene_dna.svg);
+  background-repeat: no-repeat;
+  height:200px;
+  width: 200px;
+  margin-left: 57%;
+  margin-top: 30%;
+}
+
+.scene_ponteiros{
+  background-image: url(assets/imagens/scene/nivel2_scene_ponteiros.svg);
+  background-repeat: no-repeat;
+  height:320px;
+  width: 320px;
+  margin-left: 38%;
+  margin-top: 50%;
+}
+/*----third layer----*/
+.scene_ramos{
+  background-image: url(assets/imagens/scene/nivel3_scene_ramos.svg);
+  background-repeat: no-repeat;
+  height:300px;
+  width: 300px;
+  margin-left: 45%;
+  margin-top: 45%;
+}
+/*----fourth layer----*/
+.scene_cenas{
+  background-image: url(assets/imagens/scene/nivel4_scene_cenas.svg);
+  background-repeat: no-repeat;
+  height:280px;
+  width: 280px;
+  margin-left: 37%;
+  margin-top: 37%;
+}
+.scene_coracao{
+  background-image: url(assets/imagens/scene/nivel4_scene_coracao.svg);
+  background-repeat: no-repeat;
+  height:280px;
+  width: 280px;
+  margin-left: 50%;
+  margin-top: 16%;
+}
+.scene_escuridao{
+  background-image: url(assets/imagens/scene/nivel4_scene_escuridao.svg);
+  background-repeat: no-repeat;
+  height:300px;
+  width: 300px;
+  margin-left: 20%;
+  margin-top: 15%;
+}
+.scene_fluido{
+  background-image: url(assets/imagens/scene/nivel4_scene_fluido.svg);
+  background-repeat: no-repeat;
+  height:300px;
+  width: 300px;
+  margin-left: 20%;
+  margin-top: 40%;
+
+}
+/*----fifth layer----*/
+.scene_folhas{
+  background-image: url(assets/imagens/scene/nivel5_scene_folhas.svg);
+  background-repeat: no-repeat;
+  height:330px;
+  width: 330px;
+  margin-left: 30%;
+  margin-top: 12%;
+}
+.scene_impressao{
+  background-image: url(assets/imagens/scene/nivel5_scene_impressao.svg);
+  background-repeat: no-repeat;
+  height:300px;
+  width: 300px;
+  margin-left: 15%;
+  margin-top: 30%;
+}
+
+/*----sixth layer----*/
+.scene_circulo{
+  background-image: url(assets/imagens/scene/nivel6_scene_circulo.svg);
+  background-repeat: no-repeat;
+  height:800px;
+  width: 800px;
+}
 .intro{
   grid-area:intro;
+  padding-bottom: 120px;
+}
+
+
+/*translate:(horizontal,vertical)*/
+.intro h1{
+  font-family: 'ChronosSerif-Stroked';
+  font-size: 150px;
+  letter-spacing: 3px;
+  opacity: 0.2;
+  transform: translate(-200px,80px);
+}
+
+.text-container{
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.numeros{
+  padding-top: 50px;
+  padding-bottom: 150px;
+  grid-area:numeros;
+
+}
+
+.numeros svg{
+  width: 140px;
+  height: 140px;
+  padding-top: 50px;
+  padding-left: 20px;
+}
+
+
+
+.numeros-wrapper .numeros__element{
+  transition: 0.4s ease;
+}
+.numeros-wrapper:hover .numeros__element{
+  opacity: 0.2;
+  transition: 0.2s ease;
+}
+
+.numeros__element--1:hover{
+  opacity: 1 !important;
+}
+.numeros__element--2:hover{
+  opacity: 1 !important;
+}
+.numeros__element--3:hover{
+  opacity: 1 !important;
+}
+.numeros__element--4:hover{
+  opacity: 1 !important;
+}
+.numeros__element--5:hover{
+  opacity: 1 !important;
+}
+.numeros__element--6:hover{
+  opacity: 1 !important;
+}
+.numeros__element--7:hover{
+  opacity: 1 !important;
+}
+
+#numeros__interacao{
+  padding-top: 10%;
+  font-size: 25px;
+  letter-spacing: 2;
+  text-align: center;
+}
+
+.numeros__title{
+  font-size: 200px;
+  opacity:0.2;
+  transform: translate(-40px,180px);
 }
 
 .crimes_celeres{
   grid-area:crimes_celeres;
 }
 
+.interacoes__text--wrapper{
+  padding-left: 30px;
+}
 .crimes_celeres-photo{
   grid-area:crimes_celeres-photo;
 }
