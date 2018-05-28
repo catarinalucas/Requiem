@@ -29,3 +29,28 @@ function replaceSete(){
 function replaceLess(){
     document.getElementById("numeros__interacao").innerHTML = "";
 }
+
+function replaceColor__Tinguely(){
+    document.body.style.backgroundColor = "#F0C454";
+    document.body.style.transition = "all 1s";
+}
+
+function replaceColor__Niki(){
+    document.body.style.backgroundColor = "#DB6EA5";
+    document.body.style.transition = "all 1s";
+}
+
+function replaceColor__Fritz(){
+    document.body.style.backgroundColor = "#C76320";
+    document.body.style.transition = "all 1s";
+}
+
+function replaceColor__Paik(){
+    document.body.style.backgroundColor = "#117B9C";
+    document.body.style.transition = "all 1s";
+}
+
+function replaceBlack(){
+    document.body.style.backgroundColor = "#000";
+    document.body.style.transition = "all 1s";
+}
