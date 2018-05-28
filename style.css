@@ -71,13 +71,14 @@ ul li{
   'intro intro intro intro'
   ' numeros numeros numeros numeros'
   '. crimes_celeres crimes_celeres .'
-  '. crimes_celeres-photo . .'
+  '. crimes_celeres-photo crimes_celeres-photo .'
   '. impressoes_genitais impressoes_genitais .'
-  '. retratos retratos-photo .'
-  '. story_abordo story_abordo-photo .'
-  '. fotos_homem fotos_homem-photo .'
-  '. album_familia album_familia-photo .'
-  '. instantaneos instantaneos-photo .'
+  '. retratos retratos .'
+  '. story_abordo story_abordo .'
+  '. fotos_homem fotos_homem .'
+  '. fotos_homem-photo fotos_homem-photo .'
+  '. album_familia album_familia .'
+  '. instantaneos instantaneos .'
   '. espaco espaco-photo .'
   '. acao acao .'
   '. angulos angulos .'
@@ -297,14 +298,11 @@ ul li{
 .crimes_celeres-photo{
   grid-area:crimes_celeres-photo;
   margin-top: 50px;
+  justify-self:center;
 }
 
 .impressoes_genitais{
   grid-area:impressoes_genitais;
-}
-
-.impressoes_genitais-photo{
-  grid-area:impressoes_genitais-photo;
   justify-self:center;
 }
 
@@ -315,33 +313,23 @@ ul li{
 
 .retratos{
   grid-area:retratos;
-}
-
-.retratos-photo{
-  grid-area:retratos-photo;
+  justify-self:center;
 }
 
 .story_abordo{
   grid-area:story_abordo;
-}
-
-.story_abordo-photo{
-  grid-area:story_abordo-photo;
   justify-self:center;
-}
-.story_abordo-photo img{
-  max-width: 464px;
-  max-height: 252px;
 }
 
 .fotos_homem{
   grid-area:fotos_homem;
+  justify-self:center;
 }
 
 .fotos_homem-photo{
   grid-area:fotos_homem-photo;
   justify-self:center;
-  margin-top: 220px;
+  margin-top: 40px;
 }
 
 .fotos_homem-photo img{
@@ -353,27 +341,17 @@ ul li{
 
 .album_familia{
   grid-area:album_familia;
-}
-
-.album_familia-photo{
-  grid-area:album_familia-photo;
   justify-self:center;
 }
 
-.album_familia-photo img{
-  max-width: 464px;
-  max-height: 252px;
-}
 
 .instantaneos{
   grid-area:instantaneos;
   padding-bottom: 200px;
+  justify-self:center;
 }
 
-.instantaneos-photo{
-  grid-area:instantaneos-photo;
 
-}
 
 .espaco{
   grid-area: espaco;
@@ -388,6 +366,8 @@ ul li{
   max-height: 252px;
 }
 
+
+
 .referencias_geral{
   grid-area: referencias_geral;
 }
@@ -401,7 +381,6 @@ ul li{
 }
 
 .referencias_geral img:hover{
-
   transform:translate(-2px,-5px);
 }
 .referencias_one{
@@ -464,7 +443,11 @@ ul li{
   padding-left: 30px;
   padding-top: 60px;
   padding-bottom: 150px;
+  transition: 0.2s ease;
+}
 
+.angulos img:hover{
+  transform:translate(-2px,-5px);
 }
 
 .custo{
