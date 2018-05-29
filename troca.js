@@ -50,6 +50,26 @@ function replaceColor__Paik(){
     document.body.style.transition = "all 1s";
 }
 
+function replaceColor__Tetsuo(){
+    document.body.style.backgroundColor = "#6F6F6F";
+    document.body.style.transition = "all 1s";
+}
+
+function replaceColor__Alvaro(){
+    document.body.style.backgroundColor = "#030E6D";
+    document.body.style.transition = "all 1s";
+}
+
+function replaceColor__Stelarc(){
+    document.body.style.backgroundColor = "#B8B598";
+    document.body.style.transition = "all 1s";
+}
+function replaceColor__Marcel(){
+    document.body.style.backgroundColor = "#1CB175";
+    document.body.style.transition = "all 1s";
+}
+
+
 function replaceBlack(){
     document.body.style.backgroundColor = "#000";
     document.body.style.transition = "all 1s";
